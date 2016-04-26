@@ -4,6 +4,14 @@ buildscript {
     repositories {
         jcenter()
     }
+
+    repositories {
+        mavenCentral()
+        flatDir{
+            dirs 'libs'
+        }
+    }
+
     dependencies {
         classpath 'com.android.tools.build:gradle:1.5.0'
 
